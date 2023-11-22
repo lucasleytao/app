@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzTudy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <h1><img src="../app/img/logo.png" alt="">EzTudy</h1>
+        </header>
+        
+    </div>
+    <main>
+        <div class="container">
+            <form>
+                <label for="materia">Matéria:</label>
+                <input type="text" id="materia" name="materia" required>
+
+                <label for="horario">Horário de Estudo:</label>
+                <input type="time" id="horario" name="horario" required>
+
+                <button type="submit">Adicionar Matéria</button>
+            </form>
+
+            <!-- Lista de matérias cadastradas -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Matéria</th>
+                            <th>Horário de Estudo</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-materias">
+                        <!-- As matérias serão exibidas aqui dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 EzTudyApp. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
